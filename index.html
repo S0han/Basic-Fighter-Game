@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family-Acme">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <p>Play the greatest RPG ever to be made!</p>
+      <h2>Choose your character!</h2>
+    </div>
+
+    <div class="interface">
+      <a href="#" onclick="GameManager.setGameStart('Warrior')">
+        <img src="img/avatar-player/warrior.jpg" alt="warrior">
+        <div>
+          <h3>Warrior</h3>
+          <p>Warriors have higher health and stamina, however they
+          are slower and less accurate</p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('Archer')">
+        <img src="img/avatar-player/archer.jpg" alt="archer">
+        <div>
+          <h3>Archer</h3>
+          <p>Archers are all round fighters</p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('Mage')">
+        <img src="img/avatar-player/mage.jpg" alt="mage">
+        <div>
+          <h3>Mage</h3>
+          <p>Mages have high spell damage but lack in all other areas</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="actions"></div>
+
+    <div class="arena"></div>
+
+    <div class="enemy"></div>
+
+  </body>
+</html>
